@@ -60,7 +60,7 @@ jobs:
             # docker-compose.yml, ./nginx/default.conf 업로드
             # 타겟 : /home/ubuntu
             - name: EC2 서버로 필요 파일 업로드
-              uses: appleboy/scp-action@v00.1.7
+              uses: appleboy/scp-action@v0.1.7
               # 업로드 대상이 n개이면 |로 구성 파일, 파일, ... 표현
               with:
                 host: ${{ secrets.EC2_HOST }}
