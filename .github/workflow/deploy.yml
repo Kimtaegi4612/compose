@@ -47,7 +47,7 @@ jobs:
           docker build -t kimtaegi/demo_backend ./backend
           docker push kimtaegi/demo_backend 
 
-      # 프런트 이미지 생성 -> 허브(래퍼지토리) 푸시
+      # 프런트 이미지 생성 -> 허브(래퍼지토리) 푸시.
       - name: 프런트 이미지 생성 -> 허브(래퍼지토리) 푸시
         run: |
           docker build -t kimtaegi/demo_frontend ./frontend
