@@ -9,7 +9,7 @@ jobs:
     docker-cicd:
         runs-on: ubuntu-latest
         steps:
-            # 소스코드 체크아웃
+            # 소스코드 체크아웃.
             - name: 소스코드 체크아웃
               uses: actions/checkout@v4
 
@@ -53,6 +53,12 @@ jobs:
                 docker push kimtaegi/demo_frontend
 
             # eC2 서버로 필요 파일 업로드(YML, nginx/*.conf)
+
+            # eC2 서버로 필요 파일 업로드(YML, nginx/*.conf)
+            # Ec2 생성 -> 탄력적 ip 연결 > 활성화 이후
+            # EC2 접속
+            # docker-compose.yml, ./nginx/default.conf 업로드
+            # 타겟 : /home/ubuntu
 
     #deploy:
         # 도커 컴포즈 진행
